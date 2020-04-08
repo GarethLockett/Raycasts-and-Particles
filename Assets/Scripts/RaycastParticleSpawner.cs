@@ -70,8 +70,8 @@ public class RaycastParticleSpawner : MonoBehaviour
                     Debug.Log( "Instantiated particle system: " +pSystem.name.Replace( "(Clone)", "" ), pSystem );
 
                     // Show the ray in the Scene view (Handy for debugging)
-                    Debug.DrawLine( ray.origin, hit.point, Color.yellow, 0.25f );
-                    //Debug.DrawRay( ray.origin, ray.direction, Color.yellow, 0.25f );
+                    Debug.DrawLine( ray.origin, hit.point, Color.yellow, 0.25f ); // << Draws a line in the Scene View between 2 3D positions.
+                    //Debug.DrawRay( ray.origin, ray.direction, Color.yellow, 0.25f ); // << Draws a 'ray' from a 3D position, in a direction, for a certain distance.
                 }
                 else { Debug.LogWarning( "There are no particle systems to instantiate!" ); }
             }

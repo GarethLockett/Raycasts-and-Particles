@@ -5,7 +5,7 @@ using UnityEngine;
     Author: Gareth Lockett
     Version: 1.0
     Description:    Super simple script for rotating a game object around its' XYZ axis (Euler)
-*/
+*/ 
 
 public class SpinObject : MonoBehaviour
 {
